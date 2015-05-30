@@ -13,6 +13,14 @@
 		0B2EADC51B199DF20027B166 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B2EADC41B199DF20027B166 /* Images.xcassets */; };
 		0B2EADC81B199DF20027B166 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B2EADC61B199DF20027B166 /* LaunchScreen.xib */; };
 		0B2EADD41B199DF20027B166 /* BuyMEMOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2EADD31B199DF20027B166 /* BuyMEMOTests.swift */; };
+		0B2EADE71B199E090027B166 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2EADE61B199E090027B166 /* InterfaceController.swift */; };
+		0B2EADE91B199E090027B166 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2EADE81B199E090027B166 /* NotificationController.swift */; };
+		0B2EADEB1B199E090027B166 /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2EADEA1B199E090027B166 /* GlanceController.swift */; };
+		0B2EADED1B199E090027B166 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B2EADEC1B199E090027B166 /* Images.xcassets */; };
+		0B2EADF11B199E090027B166 /* BuyMEMO WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 0B2EADF01B199E090027B166 /* BuyMEMO WatchKit App.app */; };
+		0B2EADF91B199E090027B166 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B2EADF71B199E090027B166 /* Interface.storyboard */; };
+		0B2EADFB1B199E090027B166 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B2EADFA1B199E090027B166 /* Images.xcassets */; };
+		0B2EADFE1B199E090027B166 /* BuyMEMO WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0B2EADE11B199E090027B166 /* BuyMEMO WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +31,35 @@
 			remoteGlobalIDString = 0B2EADB71B199DF10027B166;
 			remoteInfo = BuyMEMO;
 		};
+		0B2EADF21B199E090027B166 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B2EADB01B199DF10027B166 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B2EADEF1B199E090027B166;
+			remoteInfo = "BuyMEMO WatchKit App";
+		};
+		0B2EADFC1B199E090027B166 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B2EADB01B199DF10027B166 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B2EADE01B199E090027B166;
+			remoteInfo = "BuyMEMO WatchKit Extension";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0B2EAE051B199E090027B166 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0B2EADFE1B199E090027B166 /* BuyMEMO WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0B2EADB81B199DF10027B166 /* BuyMEMO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuyMEMO.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +72,17 @@
 		0B2EADCD1B199DF20027B166 /* BuyMEMOTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BuyMEMOTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B2EADD21B199DF20027B166 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B2EADD31B199DF20027B166 /* BuyMEMOTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyMEMOTests.swift; sourceTree = "<group>"; };
+		0B2EADE11B199E090027B166 /* BuyMEMO WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "BuyMEMO WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B2EADE41B199E090027B166 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B2EADE51B199E090027B166 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		0B2EADE61B199E090027B166 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		0B2EADE81B199E090027B166 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		0B2EADEA1B199E090027B166 /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		0B2EADEC1B199E090027B166 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0B2EADF01B199E090027B166 /* BuyMEMO WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BuyMEMO WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B2EADF61B199E090027B166 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B2EADF81B199E090027B166 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		0B2EADFA1B199E090027B166 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +100,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0B2EADDE1B199E090027B166 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -61,6 +115,8 @@
 			children = (
 				0B2EADBA1B199DF10027B166 /* BuyMEMO */,
 				0B2EADD01B199DF20027B166 /* BuyMEMOTests */,
+				0B2EADE21B199E090027B166 /* BuyMEMO WatchKit Extension */,
+				0B2EADF41B199E090027B166 /* BuyMEMO WatchKit App */,
 				0B2EADB91B199DF10027B166 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +126,8 @@
 			children = (
 				0B2EADB81B199DF10027B166 /* BuyMEMO.app */,
 				0B2EADCD1B199DF20027B166 /* BuyMEMOTests.xctest */,
+				0B2EADE11B199E090027B166 /* BuyMEMO WatchKit Extension.appex */,
+				0B2EADF01B199E090027B166 /* BuyMEMO WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,6 +170,45 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		0B2EADE21B199E090027B166 /* BuyMEMO WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				0B2EADE61B199E090027B166 /* InterfaceController.swift */,
+				0B2EADE81B199E090027B166 /* NotificationController.swift */,
+				0B2EADEA1B199E090027B166 /* GlanceController.swift */,
+				0B2EADEC1B199E090027B166 /* Images.xcassets */,
+				0B2EADE31B199E090027B166 /* Supporting Files */,
+			);
+			path = "BuyMEMO WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		0B2EADE31B199E090027B166 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0B2EADE41B199E090027B166 /* Info.plist */,
+				0B2EADE51B199E090027B166 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0B2EADF41B199E090027B166 /* BuyMEMO WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				0B2EADF71B199E090027B166 /* Interface.storyboard */,
+				0B2EADFA1B199E090027B166 /* Images.xcassets */,
+				0B2EADF51B199E090027B166 /* Supporting Files */,
+			);
+			path = "BuyMEMO WatchKit App";
+			sourceTree = "<group>";
+		};
+		0B2EADF51B199E090027B166 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0B2EADF61B199E090027B166 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,10 +219,12 @@
 				0B2EADB41B199DF10027B166 /* Sources */,
 				0B2EADB51B199DF10027B166 /* Frameworks */,
 				0B2EADB61B199DF10027B166 /* Resources */,
+				0B2EAE051B199E090027B166 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0B2EADFD1B199E090027B166 /* PBXTargetDependency */,
 			);
 			name = BuyMEMO;
 			productName = BuyMEMO;
@@ -150,6 +249,39 @@
 			productReference = 0B2EADCD1B199DF20027B166 /* BuyMEMOTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		0B2EADE01B199E090027B166 /* BuyMEMO WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B2EAE021B199E090027B166 /* Build configuration list for PBXNativeTarget "BuyMEMO WatchKit Extension" */;
+			buildPhases = (
+				0B2EADDD1B199E090027B166 /* Sources */,
+				0B2EADDE1B199E090027B166 /* Frameworks */,
+				0B2EADDF1B199E090027B166 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0B2EADF31B199E090027B166 /* PBXTargetDependency */,
+			);
+			name = "BuyMEMO WatchKit Extension";
+			productName = "BuyMEMO WatchKit Extension";
+			productReference = 0B2EADE11B199E090027B166 /* BuyMEMO WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		0B2EADEF1B199E090027B166 /* BuyMEMO WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B2EADFF1B199E090027B166 /* Build configuration list for PBXNativeTarget "BuyMEMO WatchKit App" */;
+			buildPhases = (
+				0B2EADEE1B199E090027B166 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BuyMEMO WatchKit App";
+			productName = "BuyMEMO WatchKit App";
+			productReference = 0B2EADF01B199E090027B166 /* BuyMEMO WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -165,6 +297,12 @@
 					0B2EADCC1B199DF20027B166 = {
 						CreatedOnToolsVersion = 6.3.1;
 						TestTargetID = 0B2EADB71B199DF10027B166;
+					};
+					0B2EADE01B199E090027B166 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					0B2EADEF1B199E090027B166 = {
+						CreatedOnToolsVersion = 6.3.1;
 					};
 				};
 			};
@@ -183,6 +321,8 @@
 			targets = (
 				0B2EADB71B199DF10027B166 /* BuyMEMO */,
 				0B2EADCC1B199DF20027B166 /* BuyMEMOTests */,
+				0B2EADE01B199E090027B166 /* BuyMEMO WatchKit Extension */,
+				0B2EADEF1B199E090027B166 /* BuyMEMO WatchKit App */,
 			);
 		};
 /* End PBXProject section */
@@ -202,6 +342,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B2EADDF1B199E090027B166 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B2EADED1B199E090027B166 /* Images.xcassets in Resources */,
+				0B2EADF11B199E090027B166 /* BuyMEMO WatchKit App.app in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B2EADEE1B199E090027B166 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B2EADF91B199E090027B166 /* Interface.storyboard in Resources */,
+				0B2EADFB1B199E090027B166 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +383,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0B2EADDD1B199E090027B166 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B2EADE91B199E090027B166 /* NotificationController.swift in Sources */,
+				0B2EADE71B199E090027B166 /* InterfaceController.swift in Sources */,
+				0B2EADEB1B199E090027B166 /* GlanceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -232,6 +400,16 @@
 			isa = PBXTargetDependency;
 			target = 0B2EADB71B199DF10027B166 /* BuyMEMO */;
 			targetProxy = 0B2EADCE1B199DF20027B166 /* PBXContainerItemProxy */;
+		};
+		0B2EADF31B199E090027B166 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0B2EADEF1B199E090027B166 /* BuyMEMO WatchKit App */;
+			targetProxy = 0B2EADF21B199E090027B166 /* PBXContainerItemProxy */;
+		};
+		0B2EADFD1B199E090027B166 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0B2EADE01B199E090027B166 /* BuyMEMO WatchKit Extension */;
+			targetProxy = 0B2EADFC1B199E090027B166 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -250,6 +428,14 @@
 				0B2EADC71B199DF20027B166 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		0B2EADF71B199E090027B166 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0B2EADF81B199E090027B166 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -392,6 +578,62 @@
 			};
 			name = Release;
 		};
+		0B2EAE001B199E090027B166 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = BuyMEMO_WatchKit_Extension;
+				INFOPLIST_FILE = "BuyMEMO WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		0B2EAE011B199E090027B166 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = BuyMEMO_WatchKit_Extension;
+				INFOPLIST_FILE = "BuyMEMO WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		0B2EAE031B199E090027B166 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BuyMEMO WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		0B2EAE041B199E090027B166 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "BuyMEMO WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -417,6 +659,22 @@
 			buildConfigurations = (
 				0B2EADDB1B199DF20027B166 /* Debug */,
 				0B2EADDC1B199DF20027B166 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0B2EADFF1B199E090027B166 /* Build configuration list for PBXNativeTarget "BuyMEMO WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B2EAE001B199E090027B166 /* Debug */,
+				0B2EAE011B199E090027B166 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0B2EAE021B199E090027B166 /* Build configuration list for PBXNativeTarget "BuyMEMO WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B2EAE031B199E090027B166 /* Debug */,
+				0B2EAE041B199E090027B166 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
