@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  BuyMEMO
-//
-//  Created by 小笠原 大樹 on 2015/05/30.
-//  Copyright (c) 2015年 ogataiki. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain
