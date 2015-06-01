@@ -5,7 +5,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         return true
@@ -34,5 +33,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 
+    // Watch kit app から呼び出しの場合
+    func application(application: UIApplication
+        ,handleWatchKitExtensionRequest userInfo: [NSObject : AnyObject]?
+        ,reply: (([NSObject : AnyObject]!) -> Void)!)
+    {
+        var appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate;
+        var vc:ViewController? = appDelegate.window?.rootViewController as? ViewController;
+     
+        reply(["buylist": vc?.buyList as! AnyObject]);
+    }
 }
 

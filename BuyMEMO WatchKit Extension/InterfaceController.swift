@@ -14,26 +14,21 @@ class InterfaceController: WKInterfaceController {
 
     @IBOutlet weak var table: WKInterfaceTable!
     
-    var rows = ["太郎😍", "花子🐽", "サンタクロース🎅", "あ", "i", "おすあふぇいwjふぁえw"]
+    var buyList: [String] = [];
 
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         
         // Configure interface objects here.
         
-        // tableの設定
-        table.setNumberOfRows(rows.count, withRowType: "TableRowController");
-        
-        // tableRowのラベルにtableItemsの要素を表示
-        for (index, item) in enumerate(rows){
-            let controller = table.rowControllerAtIndex(index) as! TableRowController
-            controller.BuyItem.setTitle(item);
-        }
+        buyListUpdate()
     }
 
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
+        
+        buyListUpdate()
     }
 
     override func didDeactivate() {
@@ -42,7 +37,27 @@ class InterfaceController: WKInterfaceController {
     }
 
     override func table(table: WKInterfaceTable, didSelectRowAtIndex rowIndex: Int) {
-        self.pushControllerWithName("DetailController", context: self.rows[rowIndex])
+        self.pushControllerWithName("DetailController", context: self.buyList[rowIndex])
+    }
+    
+    // 購入リストの更新
+    func buyListUpdate()
+    {
+        //iPhone側の親アプリ呼び出し
+        WKInterfaceController.openParentApplication(["content": ""],
+            reply: {obj, error in
+                
+                self.buyList = obj["buylist"] as! [String];
+                
+                // tableの設定
+                self.table.setNumberOfRows(self.buyList.count, withRowType: "TableRowController");
+                
+                // tableRowのラベルにtableItemsの要素を表示
+                for (index, item) in enumerate(self.buyList){
+                    let controller = self.table.rowControllerAtIndex(index) as! TableRowController
+                    controller.BuyItem.setTitle(item);
+                }
+        })
     }
 
 }

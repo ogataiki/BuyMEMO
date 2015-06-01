@@ -537,7 +537,7 @@
 				INFOPLIST_FILE = BuyMEMO/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "b97d66eb-fe3d-4c54-8d07-5010c5234cfe";
+				PROVISIONING_PROFILE = "363bb7c5-de95-4c1b-bbfd-d1fbb0f1ae45";
 			};
 			name = Debug;
 		};
@@ -550,7 +550,7 @@
 				INFOPLIST_FILE = BuyMEMO/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "b97d66eb-fe3d-4c54-8d07-5010c5234cfe";
+				PROVISIONING_PROFILE = "363bb7c5-de95-4c1b-bbfd-d1fbb0f1ae45";
 			};
 			name = Release;
 		};
@@ -602,7 +602,7 @@
 				INFOPLIST_FILE = "BuyMEMO WatchKit App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "b97d66eb-fe3d-4c54-8d07-5010c5234cfe";
+				PROVISIONING_PROFILE = "363bb7c5-de95-4c1b-bbfd-d1fbb0f1ae45";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
 				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
@@ -619,7 +619,7 @@
 				INFOPLIST_FILE = "BuyMEMO WatchKit App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "b97d66eb-fe3d-4c54-8d07-5010c5234cfe";
+				PROVISIONING_PROFILE = "363bb7c5-de95-4c1b-bbfd-d1fbb0f1ae45";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
 				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
@@ -638,7 +638,7 @@
 				INFOPLIST_FILE = "BuyMEMO WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "${TARGET_NAME}";
-				PROVISIONING_PROFILE = "b97d66eb-fe3d-4c54-8d07-5010c5234cfe";
+				PROVISIONING_PROFILE = "363bb7c5-de95-4c1b-bbfd-d1fbb0f1ae45";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -651,7 +651,7 @@
 				INFOPLIST_FILE = "BuyMEMO WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "${TARGET_NAME}";
-				PROVISIONING_PROFILE = "b97d66eb-fe3d-4c54-8d07-5010c5234cfe";
+				PROVISIONING_PROFILE = "363bb7c5-de95-4c1b-bbfd-d1fbb0f1ae45";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
