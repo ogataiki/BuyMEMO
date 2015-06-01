@@ -10,6 +10,12 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="BuyMEMO_WatchKit_App" customModuleProvider="target">
                     <items>
+                        <button width="1" height="25" alignment="center" title="リスト更新" id="Qpr-eZ-k3i">
+                            <fontDescription key="font" type="system" pointSize="13"/>
+                            <connections>
+                                <action selector="buttonAction_updateList" destination="AgC-eL-Hgc" id="WBX-F9-xWs"/>
+                            </connections>
+                        </button>
                         <table alignment="left" id="yDP-zq-RN9">
                             <items>
                                 <tableRow identifier="TableRowController" id="MCt-IV-LHy" customClass="TableRowController" customModule="BuyMEMO_WatchKit_Extension">
@@ -44,24 +50,10 @@
                     <items>
                         <group alignment="left" id="t8f-Gd-c4y">
                             <items>
-                                <label width="106" height="24" alignment="left" text="買うもの" id="1C8-qD-MQO"/>
+                                <label width="106" height="24" alignment="left" text="買うものリスト" id="1C8-qD-MQO"/>
                             </items>
                         </group>
-                        <group alignment="left" id="uCw-4Q-Ouw">
-                            <items>
-                                <table alignment="left" id="2x5-6g-34W">
-                                    <items>
-                                        <tableRow id="BAO-Hk-8Vx">
-                                            <group key="rootItem" width="1" alignment="left" id="H0W-rD-hUu">
-                                                <items>
-                                                    <label width="136" height="36" alignment="left" text="Label" textAlignment="center" id="cVk-ol-hoi"/>
-                                                </items>
-                                            </group>
-                                        </tableRow>
-                                    </items>
-                                </table>
-                            </items>
-                        </group>
+                        <group alignment="left" id="uCw-4Q-Ouw"/>
                     </items>
                     <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="14"/>
                 </glanceController>

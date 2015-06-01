@@ -154,6 +154,10 @@ class ViewController: UIViewController
             if(indexPath.row < buyList.count)
             {
                 buyList.removeAtIndex(indexPath.row);
+                
+                NSUserDefaults.standardUserDefaults().setObject(self.buyList, forKey:self.buyListSaveKey);
+                NSUserDefaults.standardUserDefaults().synchronize();
+
                 buyTableView.reloadData()
             }
         }
