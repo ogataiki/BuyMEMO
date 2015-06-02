@@ -40,8 +40,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     {
         var appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate;
         var vc:ViewController? = appDelegate.window?.rootViewController as? ViewController;
-     
-        reply(["buylist": vc?.buyList as! AnyObject]);
+        
+        if let info = userInfo as? [String: [String : Bool]] {
+            if let boughtDic = info["bought"]
+            {
+                vc?.addBought(boughtDic.keys.first!, bought: boughtDic[boughtDic.keys.first!]!);
+            }
+        }
+
+        reply(["buylist": vc?.buyList as! AnyObject, "boughtlist": vc?.boughtList as! AnyObject]);
     }
 }
 

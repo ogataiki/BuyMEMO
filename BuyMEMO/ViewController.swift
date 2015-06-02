@@ -7,6 +7,7 @@ class ViewController: UIViewController
     @IBOutlet weak var buyTableView: UITableView!
     
     var buyList: [String] = [];
+    var boughtList: [String: Bool] = [:];
     
     enum BUYITEM_EDITMODE: Int {
         case add = 0, edit
@@ -18,11 +19,13 @@ class ViewController: UIViewController
     var editBuyItem = EDITBUYITEM(buyItemEditMode: BUYITEM_EDITMODE.add, editIndex: 0);
     
     let buyListSaveKey = "buylist";
+    let boughtListSaveKey = "bought";
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        // 買うものリスト
         if((NSUserDefaults.standardUserDefaults().objectForKey(buyListSaveKey)) != nil){
             if var arr = NSUserDefaults.standardUserDefaults().objectForKey(buyListSaveKey) as? [String]
             {
@@ -32,6 +35,18 @@ class ViewController: UIViewController
             else
             {
                 buyList = [];
+            }
+        }
+        // 買ったものリストの購入済みフラグ
+        if((NSUserDefaults.standardUserDefaults().objectForKey(boughtListSaveKey)) != nil){
+            if var arr = NSUserDefaults.standardUserDefaults().objectForKey(boughtListSaveKey) as? [String: Bool]
+            {
+                // 読み込みOK
+                boughtList = arr;
+            }
+            else
+            {
+                boughtList = [:];
             }
         }
         
@@ -73,7 +88,12 @@ class ViewController: UIViewController
                 
                 NSUserDefaults.standardUserDefaults().setObject(self.buyList, forKey:self.buyListSaveKey);
                 NSUserDefaults.standardUserDefaults().synchronize();
-                
+
+                // 購入済み状態を初期化
+                self.boughtList[textField.text] = false;
+                NSUserDefaults.standardUserDefaults().setObject(self.boughtList, forKey:self.boughtListSaveKey);
+                NSUserDefaults.standardUserDefaults().synchronize();
+
                 self.buyTableView.reloadData();
         })
         
@@ -100,6 +120,23 @@ class ViewController: UIViewController
     @IBAction func resetList(sender: AnyObject) {
         buyList.removeAll(keepCapacity: false);
         buyTableView.reloadData();
+        
+        NSUserDefaults.standardUserDefaults().setObject(self.buyList, forKey:self.buyListSaveKey);
+        NSUserDefaults.standardUserDefaults().synchronize();
+    }
+    
+    func addBought(item: String, bought: Bool)
+    {
+        boughtList[item] = bought;
+        NSUserDefaults.standardUserDefaults().setObject(self.boughtList, forKey:self.boughtListSaveKey);
+        NSUserDefaults.standardUserDefaults().synchronize();
+    }
+    
+    func resetBought()
+    {
+        boughtList.removeAll(keepCapacity: false);
+        NSUserDefaults.standardUserDefaults().setObject(self.boughtList, forKey:self.boughtListSaveKey);
+        NSUserDefaults.standardUserDefaults().synchronize();
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -153,8 +190,11 @@ class ViewController: UIViewController
         {
             if(indexPath.row < buyList.count)
             {
+                boughtList[buyList[indexPath.row]] = nil;
+                NSUserDefaults.standardUserDefaults().setObject(self.boughtList, forKey:self.boughtListSaveKey);
+                NSUserDefaults.standardUserDefaults().synchronize();
+
                 buyList.removeAtIndex(indexPath.row);
-                
                 NSUserDefaults.standardUserDefaults().setObject(self.buyList, forKey:self.buyListSaveKey);
                 NSUserDefaults.standardUserDefaults().synchronize();
 
