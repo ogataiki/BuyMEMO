@@ -46,16 +46,23 @@
         <!--Glance Interface Controller-->
         <scene sceneID="BOz-TT-tkC">
             <objects>
-                <glanceController spacing="0.0" id="0uZ-2p-rRc" customClass="GlanceController" customModule="BuyMEMO_WatchKit_App" customModuleProvider="target">
+                <glanceController spacing="0.0" topTemplateType="groupLeftLarge" bottomTemplateType="body6Footer" id="0uZ-2p-rRc" customClass="GlanceController" customModule="BuyMEMO_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <group alignment="left" id="t8f-Gd-c4y">
+                        <group alignment="left" contentMode="scaleAspectFit" id="t8f-Gd-c4y">
                             <items>
-                                <label width="106" height="24" alignment="left" text="買うものリスト" id="1C8-qD-MQO"/>
+                                <imageView alignment="center" verticalAlignment="center" image="GlanceIcon" contentMode="scaleAspectFit" id="9va-zs-eFo"/>
                             </items>
                         </group>
-                        <group alignment="left" id="uCw-4Q-Ouw"/>
+                        <label alignment="left" text="買うもの" id="laf-Yf-ekF"/>
+                        <label alignment="left" text="リスト" id="UGI-l9-IOu"/>
+                        <label alignment="left" id="zjM-GG-6QZ"/>
+                        <label alignment="left" id="afC-fO-FIF"/>
+                        <label alignment="left" text="タッチで開く" id="vyq-qB-IW3"/>
                     </items>
                     <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="14"/>
+                    <connections>
+                        <outlet property="mainText" destination="afC-fO-FIF" id="cUY-9u-V5L"/>
+                    </connections>
                 </glanceController>
             </objects>
             <point key="canvasLocation" x="235" y="672"/>
