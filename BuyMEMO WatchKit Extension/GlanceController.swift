@@ -54,6 +54,11 @@ class GlanceController: WKInterfaceController {
                     }
                 }
                 
+                if(self.buyList.count == 0)
+                {
+                    textbuf += "iPhoneからリストを追加しましょう。";
+                }
+                
                 self.mainText.setText(textbuf);
         })
     }

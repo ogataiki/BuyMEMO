@@ -6,6 +6,8 @@ class InterfaceController: WKInterfaceController, BuyItemDelegate {
 
     @IBOutlet weak var table: WKInterfaceTable!
     
+    @IBOutlet weak var footerLabel: WKInterfaceLabel!
+    
     var buyList: [String] = [];
     var boughtList: [String: Bool] = [:];
 
@@ -14,6 +16,8 @@ class InterfaceController: WKInterfaceController, BuyItemDelegate {
         
         // Configure interface objects here.
         
+        footerLabel.setText("iPhoneからリストを追加できます。");
+        
         buyListUpdate()
     }
 
@@ -21,6 +25,8 @@ class InterfaceController: WKInterfaceController, BuyItemDelegate {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
         
+        footerLabel.setText("iPhoneからリストを追加できます。");
+
         buyListUpdate()
     }
 

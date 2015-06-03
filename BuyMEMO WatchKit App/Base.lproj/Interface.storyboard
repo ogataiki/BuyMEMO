@@ -35,8 +35,10 @@
                                 </tableRow>
                             </items>
                         </table>
+                        <label alignment="center" textAlignment="left" numberOfLines="2" id="agB-sh-iUt"/>
                     </items>
                     <connections>
+                        <outlet property="footerLabel" destination="agB-sh-iUt" id="sPP-1h-DJF"/>
                         <outlet property="table" destination="yDP-zq-RN9" id="RHO-iS-yIZ"/>
                     </connections>
                 </controller>
