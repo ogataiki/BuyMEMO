@@ -66,6 +66,7 @@ class ViewController: UIViewController
         gadRequest.testDevices = ["f53f84138559f6ef12ec2126ee863bbd"];
         gadBannerView.loadRequest(gadRequest)
 
+        UIApplication.sharedApplication().applicationIconBadgeNumber = buyList.count;
     }
 
     override func didReceiveMemoryWarning() {
@@ -108,6 +109,8 @@ class ViewController: UIViewController
                 NSUserDefaults.standardUserDefaults().synchronize();
 
                 self.buyTableView.reloadData();
+                
+                UIApplication.sharedApplication().applicationIconBadgeNumber = self.buyList.count;
         })
         
         let cancelAction:UIAlertAction = UIAlertAction(title: "やめる",
@@ -136,6 +139,8 @@ class ViewController: UIViewController
         
         NSUserDefaults.standardUserDefaults().setObject(self.buyList, forKey:self.buyListSaveKey);
         NSUserDefaults.standardUserDefaults().synchronize();
+        
+        UIApplication.sharedApplication().applicationIconBadgeNumber = self.buyList.count;
     }
     
     func addBought(item: String, bought: Bool)
@@ -236,6 +241,8 @@ class ViewController: UIViewController
                 NSUserDefaults.standardUserDefaults().synchronize();
 
                 buyTableView.reloadData()
+                
+                UIApplication.sharedApplication().applicationIconBadgeNumber = self.buyList.count;
             }
         }
     }
