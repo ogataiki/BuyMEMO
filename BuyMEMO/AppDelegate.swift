@@ -45,6 +45,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             if let boughtDic = info["bought"]
             {
                 vc?.addBought(boughtDic.keys.first!, bought: boughtDic[boughtDic.keys.first!]!);
+                vc?.buyTableView.reloadData();
             }
         }
 

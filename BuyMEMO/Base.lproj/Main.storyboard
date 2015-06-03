@@ -44,9 +44,54 @@
                                     <constraint firstAttribute="height" constant="44" id="Sr5-G2-06C"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelectionDuringEditing="YES" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="qk5-EA-gou">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelectionDuringEditing="YES" rowHeight="46" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="qk5-EA-gou">
                                 <rect key="frame" x="0.0" y="64" width="600" height="484"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BuyItem" id="eck-m4-fFc" customClass="TableCell" customModule="BuyMEMO" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eck-m4-fFc" id="Bvn-Li-Meh">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="品名" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abk-8e-Lac">
+                                                    <rect key="frame" x="8" y="0.0" width="472" height="45"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="bsH-oA-hMv">
+                                                    <rect key="frame" x="543" y="7" width="51" height="31"/>
+                                                    <connections>
+                                                        <action selector="switchChange:" destination="eck-m4-fFc" eventType="valueChanged" id="eYc-Um-qyN"/>
+                                                    </connections>
+                                                </switch>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="abk-8e-Lac" firstAttribute="top" secondItem="Bvn-Li-Meh" secondAttribute="top" id="07f-YT-AFZ"/>
+                                                <constraint firstItem="bsH-oA-hMv" firstAttribute="leading" secondItem="abk-8e-Lac" secondAttribute="trailing" constant="8" id="E5d-yK-2sj"/>
+                                                <constraint firstAttribute="trailing" secondItem="bsH-oA-hMv" secondAttribute="trailing" constant="8" id="PiW-Br-tij"/>
+                                                <constraint firstAttribute="trailing" secondItem="bsH-oA-hMv" secondAttribute="trailing" constant="63" id="W9V-gr-bmn"/>
+                                                <constraint firstItem="bsH-oA-hMv" firstAttribute="leading" secondItem="abk-8e-Lac" secondAttribute="trailing" constant="434" id="Ypg-N1-tNk"/>
+                                                <constraint firstAttribute="bottom" secondItem="bsH-oA-hMv" secondAttribute="bottom" constant="7" id="amx-nH-ZZz"/>
+                                                <constraint firstItem="bsH-oA-hMv" firstAttribute="top" secondItem="Bvn-Li-Meh" secondAttribute="top" constant="7" id="dqd-M7-CV5"/>
+                                                <constraint firstItem="abk-8e-Lac" firstAttribute="leading" secondItem="Bvn-Li-Meh" secondAttribute="leading" constant="8" id="jCb-pi-fho"/>
+                                                <constraint firstAttribute="bottom" secondItem="abk-8e-Lac" secondAttribute="bottom" id="kRA-Jx-HTQ"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="E5d-yK-2sj"/>
+                                                    <exclude reference="W9V-gr-bmn"/>
+                                                    <exclude reference="Ypg-N1-tNk"/>
+                                                </mask>
+                                            </variation>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="boughtSwitch" destination="bsH-oA-hMv" id="f4L-Ph-7RH"/>
+                                            <outlet property="label" destination="abk-8e-Lac" id="AxB-2t-ecK"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>

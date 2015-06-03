@@ -4,6 +4,7 @@ import GoogleMobileAds
 class ViewController: UIViewController
     , UITableViewDelegate
     , UITableViewDataSource
+    , TableCellDelegate
 {
     @IBOutlet weak var buyTableView: UITableView!
     
@@ -55,7 +56,7 @@ class ViewController: UIViewController
         
         buyTableView.delegate = self;
         buyTableView.dataSource = self;
-        buyTableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "BuyItem")
+        //buyTableView.registerClass(TableCell.self, forCellReuseIdentifier: "BuyItem")
         
         
         // AdMob呼び出し
@@ -151,6 +152,16 @@ class ViewController: UIViewController
         NSUserDefaults.standardUserDefaults().synchronize();
     }
     
+    func changeSwitch(key: String, value: Bool) -> Void
+    {
+        addBought(key, bought: value);
+        buyTableView.reloadData();
+    }
+
+    
+    
+    
+    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return buyList.count + 1;
@@ -171,22 +182,36 @@ class ViewController: UIViewController
             editBuyItem.editIndex = indexPath.row;
             addBuyItemInputView(text: "\(buyList[indexPath.row])");
         }
+        
+        tableView.deselectRowAtIndexPath(indexPath, animated: true);
     }
     
     // Cellに値を設定する
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
     {
         
-        let cell = tableView.dequeueReusableCellWithIdentifier("BuyItem", forIndexPath: indexPath) as! UITableViewCell;
+        var cell = tableView.dequeueReusableCellWithIdentifier("BuyItem", forIndexPath: indexPath) as! TableCell;
+        
+        cell.setDelegate(self);
         
         // Cellに値を設定.
         if(indexPath.row == buyList.count)
         {
-            cell.textLabel?.text = "【タップして買うものを追加】";
+            cell.setTitle("【タップして買うものを追加】");
+            cell.invalidSwitch(true);
         }
         else
         {
-            cell.textLabel?.text = "\(buyList[indexPath.row])";
+            cell.setTitle("\(buyList[indexPath.row])");
+            cell.invalidSwitch(false);
+            if let bought = boughtList[buyList[indexPath.row]]
+            {
+                cell.setSwitch(bought);
+            }
+            else
+            {
+                cell.setSwitch(false);
+            }
         }
         
         return cell;

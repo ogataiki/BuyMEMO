@@ -33,6 +33,7 @@
 		50C1F5471B1E88F5009F6578 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50C1F53D1B1E88F5009F6578 /* MessageUI.framework */; };
 		50C1F5481B1E88F5009F6578 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50C1F53E1B1E88F5009F6578 /* StoreKit.framework */; };
 		50C1F5491B1E88F5009F6578 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50C1F53F1B1E88F5009F6578 /* SystemConfiguration.framework */; };
+		50C1F54B1B1E94E2009F6578 /* TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C1F54A1B1E94E2009F6578 /* TableCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +108,7 @@
 		50C1F53D1B1E88F5009F6578 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		50C1F53E1B1E88F5009F6578 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		50C1F53F1B1E88F5009F6578 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		50C1F54A1B1E94E2009F6578 /* TableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +175,7 @@
 			children = (
 				0B2EADBD1B199DF10027B166 /* AppDelegate.swift */,
 				0B2EADBF1B199DF20027B166 /* ViewController.swift */,
+				50C1F54A1B1E94E2009F6578 /* TableCell.swift */,
 				0B2EADC11B199DF20027B166 /* Main.storyboard */,
 				0B2EADC41B199DF20027B166 /* Images.xcassets */,
 				0B2EADC61B199DF20027B166 /* LaunchScreen.xib */,
@@ -425,6 +428,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50C1F54B1B1E94E2009F6578 /* TableCell.swift in Sources */,
 				0B2EADC01B199DF20027B166 /* ViewController.swift in Sources */,
 				0B2EADBE1B199DF20027B166 /* AppDelegate.swift in Sources */,
 			);
