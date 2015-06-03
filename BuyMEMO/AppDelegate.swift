@@ -48,8 +48,39 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 vc?.buyTableView.reloadData();
             }
         }
-
+        
         reply(["buylist": vc?.buyList as! AnyObject, "boughtlist": vc?.boughtList as! AnyObject]);
+
+        // なんか遅いので処理も多くないしこれで
+/*
+        
+        var bgTask: UIBackgroundTaskIdentifier!;
+        bgTask = application.beginBackgroundTaskWithName("WatchTask", expirationHandler: { () -> Void in
+            
+            application.endBackgroundTask(bgTask);
+            bgTask = UIBackgroundTaskInvalid;
+        })
+        
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), { () -> Void in
+            
+            var appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate;
+            var vc:ViewController? = appDelegate.window?.rootViewController as? ViewController;
+            
+            if let info = userInfo as? [String: [String : Bool]] {
+                if let boughtDic = info["bought"]
+                {
+                    vc?.addBought(boughtDic.keys.first!, bought: boughtDic[boughtDic.keys.first!]!);
+                    vc?.buyTableView.reloadData();
+                }
+            }
+            
+            reply(["buylist": vc?.buyList as! AnyObject, "boughtlist": vc?.boughtList as! AnyObject]);
+            
+            application.endBackgroundTask(bgTask);
+            bgTask = UIBackgroundTaskInvalid;
+        });
+*/
+        
     }
 }
 
