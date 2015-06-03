@@ -22,6 +22,17 @@
 		0B2EADFB1B199E090027B166 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B2EADFA1B199E090027B166 /* Images.xcassets */; };
 		0B2EADFE1B199E090027B166 /* BuyMEMO WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0B2EADE11B199E090027B166 /* BuyMEMO WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		0B2EAE0B1B19A68D0027B166 /* TableRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2EAE0A1B19A68D0027B166 /* TableRowController.swift */; };
+		50C1F5351B1E88A1009F6578 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50C1F5341B1E88A1009F6578 /* GoogleMobileAds.framework */; };
+		50C1F5401B1E88F5009F6578 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50C1F5361B1E88F5009F6578 /* AdSupport.framework */; };
+		50C1F5411B1E88F5009F6578 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50C1F5371B1E88F5009F6578 /* AudioToolbox.framework */; };
+		50C1F5421B1E88F5009F6578 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50C1F5381B1E88F5009F6578 /* AVFoundation.framework */; };
+		50C1F5431B1E88F5009F6578 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50C1F5391B1E88F5009F6578 /* CoreGraphics.framework */; };
+		50C1F5441B1E88F5009F6578 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50C1F53A1B1E88F5009F6578 /* CoreTelephony.framework */; };
+		50C1F5451B1E88F5009F6578 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50C1F53B1B1E88F5009F6578 /* EventKit.framework */; };
+		50C1F5461B1E88F5009F6578 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50C1F53C1B1E88F5009F6578 /* EventKitUI.framework */; };
+		50C1F5471B1E88F5009F6578 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50C1F53D1B1E88F5009F6578 /* MessageUI.framework */; };
+		50C1F5481B1E88F5009F6578 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50C1F53E1B1E88F5009F6578 /* StoreKit.framework */; };
+		50C1F5491B1E88F5009F6578 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50C1F53F1B1E88F5009F6578 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +96,17 @@
 		0B2EADF81B199E090027B166 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		0B2EADFA1B199E090027B166 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0B2EAE0A1B19A68D0027B166 /* TableRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableRowController.swift; sourceTree = "<group>"; };
+		50C1F5341B1E88A1009F6578 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
+		50C1F5361B1E88F5009F6578 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		50C1F5371B1E88F5009F6578 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		50C1F5381B1E88F5009F6578 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		50C1F5391B1E88F5009F6578 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		50C1F53A1B1E88F5009F6578 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		50C1F53B1B1E88F5009F6578 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		50C1F53C1B1E88F5009F6578 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
+		50C1F53D1B1E88F5009F6578 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		50C1F53E1B1E88F5009F6578 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		50C1F53F1B1E88F5009F6578 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +114,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50C1F5401B1E88F5009F6578 /* AdSupport.framework in Frameworks */,
+				50C1F5411B1E88F5009F6578 /* AudioToolbox.framework in Frameworks */,
+				50C1F5421B1E88F5009F6578 /* AVFoundation.framework in Frameworks */,
+				50C1F5431B1E88F5009F6578 /* CoreGraphics.framework in Frameworks */,
+				50C1F5441B1E88F5009F6578 /* CoreTelephony.framework in Frameworks */,
+				50C1F5451B1E88F5009F6578 /* EventKit.framework in Frameworks */,
+				50C1F5461B1E88F5009F6578 /* EventKitUI.framework in Frameworks */,
+				50C1F5471B1E88F5009F6578 /* MessageUI.framework in Frameworks */,
+				50C1F5481B1E88F5009F6578 /* StoreKit.framework in Frameworks */,
+				50C1F5491B1E88F5009F6578 /* SystemConfiguration.framework in Frameworks */,
+				50C1F5351B1E88A1009F6578 /* GoogleMobileAds.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +153,7 @@
 				0B2EADE21B199E090027B166 /* BuyMEMO WatchKit Extension */,
 				0B2EADF41B199E090027B166 /* BuyMEMO WatchKit App */,
 				0B2EADB91B199DF10027B166 /* Products */,
+				50C1F5331B1E8883009F6578 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -210,6 +244,24 @@
 				0B2EADF61B199E090027B166 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		50C1F5331B1E8883009F6578 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				50C1F5361B1E88F5009F6578 /* AdSupport.framework */,
+				50C1F5371B1E88F5009F6578 /* AudioToolbox.framework */,
+				50C1F5381B1E88F5009F6578 /* AVFoundation.framework */,
+				50C1F5391B1E88F5009F6578 /* CoreGraphics.framework */,
+				50C1F53A1B1E88F5009F6578 /* CoreTelephony.framework */,
+				50C1F53B1B1E88F5009F6578 /* EventKit.framework */,
+				50C1F53C1B1E88F5009F6578 /* EventKitUI.framework */,
+				50C1F53D1B1E88F5009F6578 /* MessageUI.framework */,
+				50C1F53E1B1E88F5009F6578 /* StoreKit.framework */,
+				50C1F53F1B1E88F5009F6578 /* SystemConfiguration.framework */,
+				50C1F5341B1E88A1009F6578 /* GoogleMobileAds.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -534,6 +586,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: TAIKI OGASAWARA (2YFP535SKN)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = BuyMEMO/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -547,6 +603,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: TAIKI OGASAWARA (2YFP535SKN)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = BuyMEMO/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

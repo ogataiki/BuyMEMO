@@ -36,7 +36,7 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5kr-LZ-6Q0" userLabel="GADBannerView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5kr-LZ-6Q0" userLabel="GADBannerView" customClass="GADBannerView">
                                 <rect key="frame" x="140" y="556" width="320" height="44"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -64,6 +64,7 @@
                     </view>
                     <connections>
                         <outlet property="buyTableView" destination="qk5-EA-gou" id="UeT-BW-e42"/>
+                        <outlet property="gadBannerView" destination="5kr-LZ-6Q0" id="Pz2-WM-Qzq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

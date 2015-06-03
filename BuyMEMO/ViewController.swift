@@ -1,10 +1,13 @@
 import UIKit
+import GoogleMobileAds
 
 class ViewController: UIViewController
     , UITableViewDelegate
     , UITableViewDataSource
 {
     @IBOutlet weak var buyTableView: UITableView!
+    
+    @IBOutlet weak var gadBannerView: GADBannerView!
     
     var buyList: [String] = [];
     var boughtList: [String: Bool] = [:];
@@ -53,6 +56,15 @@ class ViewController: UIViewController
         buyTableView.delegate = self;
         buyTableView.dataSource = self;
         buyTableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "BuyItem")
+        
+        
+        // AdMob呼び出し
+        gadBannerView.adUnitID = "ca-app-pub-0000000000000000/0000000000";
+        gadBannerView.rootViewController = self;
+        let gadRequest = GADRequest();
+        gadRequest.testDevices = ["f53f84138559f6ef12ec2126ee863bbd"];
+        gadBannerView.loadRequest(gadRequest)
+
     }
 
     override func didReceiveMemoryWarning() {

@@ -1,11 +1,3 @@
-//
-//  GlanceController.swift
-//  BuyMEMO WatchKit Extension
-//
-//  Created by 小笠原 大樹 on 2015/05/30.
-//  Copyright (c) 2015年 ogataiki. All rights reserved.
-//
-
 import WatchKit
 import Foundation
 
@@ -56,9 +48,8 @@ class GlanceController: WKInterfaceController {
                     textbuf += self.buyList[i];
                     textbuf += "\n";
                     
-                    if(i > 1)
+                    if(i > 3)
                     {
-                        textbuf += "等 \(self.buyList.count)個";
                         break;
                     }
                 }
