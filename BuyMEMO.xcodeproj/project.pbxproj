@@ -22,6 +22,8 @@
 		0B2EADFB1B199E090027B166 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B2EADFA1B199E090027B166 /* Images.xcassets */; };
 		0B2EADFE1B199E090027B166 /* BuyMEMO WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0B2EADE11B199E090027B166 /* BuyMEMO WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		0B2EAE0B1B19A68D0027B166 /* TableRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2EAE0A1B19A68D0027B166 /* TableRowController.swift */; };
+		50398CDF1B1FCE63003E400D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 50398CE11B1FCE63003E400D /* Localizable.strings */; };
+		50398CE61B1FD2F4003E400D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 50398CE81B1FD2F4003E400D /* Localizable.strings */; };
 		50C1F5351B1E88A1009F6578 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50C1F5341B1E88A1009F6578 /* GoogleMobileAds.framework */; };
 		50C1F5401B1E88F5009F6578 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50C1F5361B1E88F5009F6578 /* AdSupport.framework */; };
 		50C1F5411B1E88F5009F6578 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50C1F5371B1E88F5009F6578 /* AudioToolbox.framework */; };
@@ -76,7 +78,6 @@
 
 /* Begin PBXFileReference section */
 		0B2EADB81B199DF10027B166 /* BuyMEMO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuyMEMO.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0B2EADBC1B199DF10027B166 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B2EADBD1B199DF10027B166 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0B2EADBF1B199DF20027B166 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0B2EADC21B199DF20027B166 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -86,17 +87,36 @@
 		0B2EADD21B199DF20027B166 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B2EADD31B199DF20027B166 /* BuyMEMOTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyMEMOTests.swift; sourceTree = "<group>"; };
 		0B2EADE11B199E090027B166 /* BuyMEMO WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "BuyMEMO WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0B2EADE41B199E090027B166 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B2EADE51B199E090027B166 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		0B2EADE61B199E090027B166 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
 		0B2EADE81B199E090027B166 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		0B2EADEA1B199E090027B166 /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
 		0B2EADEC1B199E090027B166 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0B2EADF01B199E090027B166 /* BuyMEMO WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BuyMEMO WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0B2EADF61B199E090027B166 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B2EADF81B199E090027B166 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		0B2EADFA1B199E090027B166 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0B2EAE0A1B19A68D0027B166 /* TableRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableRowController.swift; sourceTree = "<group>"; };
+		50398CC81B1FCBC4003E400D /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
+		50398CC91B1FCBC4003E400D /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		50398CCA1B1FCBC4003E400D /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Interface.strings; sourceTree = "<group>"; };
+		50398CCC1B1FCC3A003E400D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		50398CCE1B1FCC47003E400D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		50398CD01B1FCC52003E400D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Interface.strings; sourceTree = "<group>"; };
+		50398CD11B1FCCF4003E400D /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/Info.plist; sourceTree = "<group>"; };
+		50398CD31B1FCCF6003E400D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = en.lproj/Info.plist; sourceTree = "<group>"; };
+		50398CD41B1FCCF7003E400D /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = ja; path = ja.lproj/Info.plist; sourceTree = "<group>"; };
+		50398CD51B1FCD03003E400D /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/Info.plist; sourceTree = "<group>"; };
+		50398CD71B1FCD04003E400D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = en.lproj/Info.plist; sourceTree = "<group>"; };
+		50398CD81B1FCD05003E400D /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = ja; path = ja.lproj/Info.plist; sourceTree = "<group>"; };
+		50398CD91B1FCD0D003E400D /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/Info.plist; sourceTree = "<group>"; };
+		50398CDB1B1FCD0F003E400D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = en; path = en.lproj/Info.plist; sourceTree = "<group>"; };
+		50398CDC1B1FCD0F003E400D /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = ja; path = ja.lproj/Info.plist; sourceTree = "<group>"; };
+		50398CE01B1FCE63003E400D /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		50398CE21B1FCE64003E400D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		50398CE31B1FCE65003E400D /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		50398CE71B1FD2F4003E400D /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		50398CE91B1FD2F5003E400D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		50398CEA1B1FD2F6003E400D /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		50C1F5341B1E88A1009F6578 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
 		50C1F5361B1E88F5009F6578 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		50C1F5371B1E88F5009F6578 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -187,7 +207,8 @@
 		0B2EADBB1B199DF10027B166 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				0B2EADBC1B199DF10027B166 /* Info.plist */,
+				50398CD21B1FCCF4003E400D /* Info.plist */,
+				50398CE11B1FCE63003E400D /* Localizable.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -225,8 +246,9 @@
 		0B2EADE31B199E090027B166 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				0B2EADE41B199E090027B166 /* Info.plist */,
+				50398CD61B1FCD03003E400D /* Info.plist */,
 				0B2EADE51B199E090027B166 /* PushNotificationPayload.apns */,
+				50398CE81B1FD2F4003E400D /* Localizable.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -244,7 +266,7 @@
 		0B2EADF51B199E090027B166 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				0B2EADF61B199E090027B166 /* Info.plist */,
+				50398CDA1B1FCD0D003E400D /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -371,6 +393,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ja,
 			);
 			mainGroup = 0B2EADAF1B199DF10027B166;
 			productRefGroup = 0B2EADB91B199DF10027B166 /* Products */;
@@ -391,6 +414,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B2EADC31B199DF20027B166 /* Main.storyboard in Resources */,
+				50398CDF1B1FCE63003E400D /* Localizable.strings in Resources */,
 				0B2EADC81B199DF20027B166 /* LaunchScreen.xib in Resources */,
 				0B2EADC51B199DF20027B166 /* Images.xcassets in Resources */,
 			);
@@ -408,6 +432,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B2EADED1B199E090027B166 /* Images.xcassets in Resources */,
+				50398CE61B1FD2F4003E400D /* Localizable.strings in Resources */,
 				0B2EADF11B199E090027B166 /* BuyMEMO WatchKit App.app in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -478,6 +503,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				0B2EADC21B199DF20027B166 /* Base */,
+				50398CC81B1FCBC4003E400D /* ja */,
+				50398CCC1B1FCC3A003E400D /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -486,6 +513,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				0B2EADC71B199DF20027B166 /* Base */,
+				50398CC91B1FCBC4003E400D /* ja */,
+				50398CCE1B1FCC47003E400D /* en */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -494,8 +523,60 @@
 			isa = PBXVariantGroup;
 			children = (
 				0B2EADF81B199E090027B166 /* Base */,
+				50398CCA1B1FCBC4003E400D /* ja */,
+				50398CD01B1FCC52003E400D /* en */,
 			);
 			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		50398CD21B1FCCF4003E400D /* Info.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50398CD11B1FCCF4003E400D /* Base */,
+				50398CD31B1FCCF6003E400D /* en */,
+				50398CD41B1FCCF7003E400D /* ja */,
+			);
+			name = Info.plist;
+			sourceTree = "<group>";
+		};
+		50398CD61B1FCD03003E400D /* Info.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50398CD51B1FCD03003E400D /* Base */,
+				50398CD71B1FCD04003E400D /* en */,
+				50398CD81B1FCD05003E400D /* ja */,
+			);
+			name = Info.plist;
+			sourceTree = "<group>";
+		};
+		50398CDA1B1FCD0D003E400D /* Info.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50398CD91B1FCD0D003E400D /* Base */,
+				50398CDB1B1FCD0F003E400D /* en */,
+				50398CDC1B1FCD0F003E400D /* ja */,
+			);
+			name = Info.plist;
+			sourceTree = "<group>";
+		};
+		50398CE11B1FCE63003E400D /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50398CE01B1FCE63003E400D /* Base */,
+				50398CE21B1FCE64003E400D /* en */,
+				50398CE31B1FCE65003E400D /* ja */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		50398CE81B1FD2F4003E400D /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50398CE71B1FD2F4003E400D /* Base */,
+				50398CE91B1FD2F5003E400D /* en */,
+				50398CEA1B1FD2F6003E400D /* ja */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -537,6 +618,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -576,6 +658,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
@@ -594,7 +677,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = BuyMEMO/Info.plist;
+				INFOPLIST_FILE = BuyMEMO/Base.lproj/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "363bb7c5-de95-4c1b-bbfd-d1fbb0f1ae45";
@@ -611,7 +694,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = BuyMEMO/Info.plist;
+				INFOPLIST_FILE = BuyMEMO/Base.lproj/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "363bb7c5-de95-4c1b-bbfd-d1fbb0f1ae45";
@@ -663,7 +746,7 @@
 					"$(inherited)",
 				);
 				IBSC_MODULE = BuyMEMO_WatchKit_Extension;
-				INFOPLIST_FILE = "BuyMEMO WatchKit App/Info.plist";
+				INFOPLIST_FILE = "BuyMEMO WatchKit App/Base.lproj/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "363bb7c5-de95-4c1b-bbfd-d1fbb0f1ae45";
@@ -680,7 +763,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: TAIKI OGASAWARA (2YFP535SKN)";
 				IBSC_MODULE = BuyMEMO_WatchKit_Extension;
-				INFOPLIST_FILE = "BuyMEMO WatchKit App/Info.plist";
+				INFOPLIST_FILE = "BuyMEMO WatchKit App/Base.lproj/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "363bb7c5-de95-4c1b-bbfd-d1fbb0f1ae45";
@@ -699,7 +782,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "BuyMEMO WatchKit Extension/Info.plist";
+				INFOPLIST_FILE = "BuyMEMO WatchKit Extension/Base.lproj/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "${TARGET_NAME}";
 				PROVISIONING_PROFILE = "363bb7c5-de95-4c1b-bbfd-d1fbb0f1ae45";
@@ -712,7 +795,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: TAIKI OGASAWARA (2YFP535SKN)";
-				INFOPLIST_FILE = "BuyMEMO WatchKit Extension/Info.plist";
+				INFOPLIST_FILE = "BuyMEMO WatchKit Extension/Base.lproj/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "${TARGET_NAME}";
 				PROVISIONING_PROFILE = "363bb7c5-de95-4c1b-bbfd-d1fbb0f1ae45";

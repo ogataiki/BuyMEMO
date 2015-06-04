@@ -76,16 +76,16 @@ class ViewController: UIViewController
 
     func addBuyItemInputView(text: String = "")
     {
-        var textAlert = UIAlertController(title: "買うものを入力"
+        var textAlert = UIAlertController(title: NSLocalizedString("buyInput", comment: "買うものを入力")
             , message: ""
             , preferredStyle: UIAlertControllerStyle.Alert);
         
         textAlert.addTextFieldWithConfigurationHandler { (tf: UITextField!) -> Void in
-            tf.placeholder = "買うもの";
+            tf.placeholder = NSLocalizedString("buyInput", comment: "買うものを入力");
             tf.text = text;
         };
         
-        let defaultAction:UIAlertAction = UIAlertAction(title: "決定",
+        let defaultAction:UIAlertAction = UIAlertAction(title: NSLocalizedString("entry", comment: "決定"),
             style: UIAlertActionStyle.Default,
             handler:{
                 (action:UIAlertAction!) -> Void in
@@ -113,7 +113,7 @@ class ViewController: UIViewController
                 UIApplication.sharedApplication().applicationIconBadgeNumber = self.buyList.count;
         })
         
-        let cancelAction:UIAlertAction = UIAlertAction(title: "やめる",
+        let cancelAction:UIAlertAction = UIAlertAction(title: NSLocalizedString("cancel", comment: "やめる"),
             style: UIAlertActionStyle.Cancel,
             handler:{
                 (action:UIAlertAction!) -> Void in
@@ -202,7 +202,7 @@ class ViewController: UIViewController
         // Cellに値を設定.
         if(indexPath.row == buyList.count)
         {
-            cell.setTitle("【タップして買うものを追加】");
+            cell.setTitle(NSLocalizedString("addItem", comment: "【タップして買うものを追加】"));
             cell.invalidSwitch(true);
         }
         else

@@ -1,0 +1,18 @@
+
+/* Class = "WKInterfaceButton"; title = "リスト更新"; ObjectID = "Qpr-eZ-k3i"; */
+"Qpr-eZ-k3i.title" = "Update list";
+
+/* Class = "WKInterfaceLabel"; text = "リスト"; ObjectID = "UGI-l9-IOu"; */
+"UGI-l9-IOu.text" = "List";
+
+/* Class = "WKInterfaceLabel"; text = "Alert Label"; ObjectID = "XkS-y5-khE"; */
+"XkS-y5-khE.text" = "Alert Label";
+
+/* Class = "WKInterfaceLabel"; text = "買うもの"; ObjectID = "laf-Yf-ekF"; */
+"laf-Yf-ekF.text" = "Buy later";
+
+/* Class = "WKInterfaceSwitch"; title = "品名"; ObjectID = "vFZ-dZ-tK0"; */
+"vFZ-dZ-tK0.title" = "Goods name";
+
+/* Class = "WKInterfaceLabel"; text = "タッチで開く"; ObjectID = "vyq-qB-IW3"; */
+"vyq-qB-IW3.text" = "Open in touch.";
