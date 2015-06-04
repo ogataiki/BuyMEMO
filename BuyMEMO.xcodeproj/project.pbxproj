@@ -22,6 +22,7 @@
 		0B2EADFB1B199E090027B166 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B2EADFA1B199E090027B166 /* Images.xcassets */; };
 		0B2EADFE1B199E090027B166 /* BuyMEMO WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0B2EADE11B199E090027B166 /* BuyMEMO WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		0B2EAE0B1B19A68D0027B166 /* TableRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2EAE0A1B19A68D0027B166 /* TableRowController.swift */; };
+		0BDE818B1B20810F00E4CE57 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0BDE818D1B20810F00E4CE57 /* InfoPlist.strings */; };
 		50398CDF1B1FCE63003E400D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 50398CE11B1FCE63003E400D /* Localizable.strings */; };
 		50398CE61B1FD2F4003E400D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 50398CE81B1FD2F4003E400D /* Localizable.strings */; };
 		50C1F5351B1E88A1009F6578 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50C1F5341B1E88A1009F6578 /* GoogleMobileAds.framework */; };
@@ -96,6 +97,9 @@
 		0B2EADF81B199E090027B166 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		0B2EADFA1B199E090027B166 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0B2EAE0A1B19A68D0027B166 /* TableRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableRowController.swift; sourceTree = "<group>"; };
+		0BDE818C1B20810F00E4CE57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0BDE818E1B20811100E4CE57 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0BDE818F1B20811100E4CE57 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		50398CC81B1FCBC4003E400D /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
 		50398CC91B1FCBC4003E400D /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		50398CCA1B1FCBC4003E400D /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Interface.strings; sourceTree = "<group>"; };
@@ -209,6 +213,7 @@
 			children = (
 				50398CD21B1FCCF4003E400D /* Info.plist */,
 				50398CE11B1FCE63003E400D /* Localizable.strings */,
+				0BDE818D1B20810F00E4CE57 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -417,6 +422,7 @@
 				50398CDF1B1FCE63003E400D /* Localizable.strings in Resources */,
 				0B2EADC81B199DF20027B166 /* LaunchScreen.xib in Resources */,
 				0B2EADC51B199DF20027B166 /* Images.xcassets in Resources */,
+				0BDE818B1B20810F00E4CE57 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -527,6 +533,16 @@
 				50398CD01B1FCC52003E400D /* en */,
 			);
 			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		0BDE818D1B20810F00E4CE57 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0BDE818C1B20810F00E4CE57 /* Base */,
+				0BDE818E1B20811100E4CE57 /* en */,
+				0BDE818F1B20811100E4CE57 /* ja */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 		50398CD21B1FCCF4003E400D /* Info.plist */ = {
@@ -680,7 +696,7 @@
 				INFOPLIST_FILE = BuyMEMO/Base.lproj/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "363bb7c5-de95-4c1b-bbfd-d1fbb0f1ae45";
+				PROVISIONING_PROFILE = "b97d66eb-fe3d-4c54-8d07-5010c5234cfe";
 			};
 			name = Debug;
 		};
@@ -697,7 +713,7 @@
 				INFOPLIST_FILE = BuyMEMO/Base.lproj/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "363bb7c5-de95-4c1b-bbfd-d1fbb0f1ae45";
+				PROVISIONING_PROFILE = "b97d66eb-fe3d-4c54-8d07-5010c5234cfe";
 			};
 			name = Release;
 		};
@@ -749,7 +765,7 @@
 				INFOPLIST_FILE = "BuyMEMO WatchKit App/Base.lproj/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "363bb7c5-de95-4c1b-bbfd-d1fbb0f1ae45";
+				PROVISIONING_PROFILE = "b97d66eb-fe3d-4c54-8d07-5010c5234cfe";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
 				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
@@ -766,7 +782,7 @@
 				INFOPLIST_FILE = "BuyMEMO WatchKit App/Base.lproj/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "363bb7c5-de95-4c1b-bbfd-d1fbb0f1ae45";
+				PROVISIONING_PROFILE = "b97d66eb-fe3d-4c54-8d07-5010c5234cfe";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
 				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
@@ -785,7 +801,7 @@
 				INFOPLIST_FILE = "BuyMEMO WatchKit Extension/Base.lproj/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "${TARGET_NAME}";
-				PROVISIONING_PROFILE = "363bb7c5-de95-4c1b-bbfd-d1fbb0f1ae45";
+				PROVISIONING_PROFILE = "b97d66eb-fe3d-4c54-8d07-5010c5234cfe";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -798,7 +814,7 @@
 				INFOPLIST_FILE = "BuyMEMO WatchKit Extension/Base.lproj/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "${TARGET_NAME}";
-				PROVISIONING_PROFILE = "363bb7c5-de95-4c1b-bbfd-d1fbb0f1ae45";
+				PROVISIONING_PROFILE = "b97d66eb-fe3d-4c54-8d07-5010c5234cfe";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
