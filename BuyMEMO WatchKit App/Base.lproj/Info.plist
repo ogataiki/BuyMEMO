@@ -9,7 +9,7 @@
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.ogataiki.BuyMEMO.watchkitapp</string>
+	<string>com.gmail.ogataiki.BuyMemo.watchkitapp</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -28,7 +28,7 @@
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 	</array>
 	<key>WKCompanionAppBundleIdentifier</key>
-	<string>com.ogataiki.BuyMEMO</string>
+	<string>com.gmail.ogataiki.BuyMemo</string>
 	<key>WKWatchKitApp</key>
 	<true/>
 </dict>

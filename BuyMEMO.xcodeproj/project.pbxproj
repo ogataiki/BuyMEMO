@@ -385,9 +385,11 @@
 					};
 					0B2EADE01B199E090027B166 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = CPGTRG2F88;
 					};
 					0B2EADEF1B199E090027B166 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = CPGTRG2F88;
 					};
 				};
 			};
@@ -687,8 +689,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: TAIKI OGASAWARA (2YFP535SKN)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: TAIKI OGASAWARA (CPGTRG2F88)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: TAIKI OGASAWARA (CPGTRG2F88)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -696,7 +698,7 @@
 				INFOPLIST_FILE = BuyMEMO/Base.lproj/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "b97d66eb-fe3d-4c54-8d07-5010c5234cfe";
+				PROVISIONING_PROFILE = "9db1f32e-b148-4edd-835a-e9a3930a4d49";
 			};
 			name = Debug;
 		};
@@ -704,8 +706,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: TAIKI OGASAWARA (2YFP535SKN)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: TAIKI OGASAWARA (CPGTRG2F88)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: TAIKI OGASAWARA (CPGTRG2F88)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -713,7 +715,7 @@
 				INFOPLIST_FILE = BuyMEMO/Base.lproj/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "b97d66eb-fe3d-4c54-8d07-5010c5234cfe";
+				PROVISIONING_PROFILE = "9db1f32e-b148-4edd-835a-e9a3930a4d49";
 			};
 			name = Release;
 		};
@@ -755,8 +757,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: TAIKI OGASAWARA (2YFP535SKN)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: TAIKI OGASAWARA (CPGTRG2F88)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: TAIKI OGASAWARA (CPGTRG2F88)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -765,7 +767,7 @@
 				INFOPLIST_FILE = "BuyMEMO WatchKit App/Base.lproj/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "b97d66eb-fe3d-4c54-8d07-5010c5234cfe";
+				PROVISIONING_PROFILE = "d39ee491-21cb-47a8-b6bc-86e6de589a71";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
 				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
@@ -776,13 +778,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: TAIKI OGASAWARA (2YFP535SKN)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: TAIKI OGASAWARA (CPGTRG2F88)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: TAIKI OGASAWARA (CPGTRG2F88)";
 				IBSC_MODULE = BuyMEMO_WatchKit_Extension;
 				INFOPLIST_FILE = "BuyMEMO WatchKit App/Base.lproj/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "b97d66eb-fe3d-4c54-8d07-5010c5234cfe";
+				PROVISIONING_PROFILE = "d39ee491-21cb-47a8-b6bc-86e6de589a71";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
 				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
@@ -792,8 +794,8 @@
 		0B2EAE031B199E090027B166 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: TAIKI OGASAWARA (2YFP535SKN)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: TAIKI OGASAWARA (CPGTRG2F88)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: TAIKI OGASAWARA (CPGTRG2F88)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -801,7 +803,7 @@
 				INFOPLIST_FILE = "BuyMEMO WatchKit Extension/Base.lproj/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "${TARGET_NAME}";
-				PROVISIONING_PROFILE = "b97d66eb-fe3d-4c54-8d07-5010c5234cfe";
+				PROVISIONING_PROFILE = "e3c08f6b-c3fa-468f-8659-40a19164485f";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -809,12 +811,12 @@
 		0B2EAE041B199E090027B166 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: TAIKI OGASAWARA (2YFP535SKN)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: TAIKI OGASAWARA (CPGTRG2F88)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: TAIKI OGASAWARA (CPGTRG2F88)";
 				INFOPLIST_FILE = "BuyMEMO WatchKit Extension/Base.lproj/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_NAME = "${TARGET_NAME}";
-				PROVISIONING_PROFILE = "b97d66eb-fe3d-4c54-8d07-5010c5234cfe";
+				PROVISIONING_PROFILE = "e3c08f6b-c3fa-468f-8659-40a19164485f";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
